@@ -1,0 +1,106 @@
+/* ── Global resets & font ────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+    color: #EEEEEE;
+    padding: 12px 12px;
+    background-color: transparent;
+}
+
+[data-testid="stSidebarContent"] {
+    padding: 0;
+    border-radius: 12px;
+    background-color: #222831;
+}
+
+[data-testid="stSidebarContent"]>div {
+    background-color: transparent;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+[data-testid="stSidebarHeader"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+[data-testid="stSidebarUserContent"] {
+    background-color: transparent;
+    height: 100%;
+}
+
+[data-testid="stSidebarUserContent"]>div,
+[data-testid="stSidebarUserContent"]>div>div {
+    height: 100%;
+}
+
+[data-testid="stSidebarUserContent"]>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] .stMarkdown h3 {
+    color: #cbd5e1;
+}
+
+/* ── Metric cards ─────────────────────────────────────────────────────────── */
+[data-testid="stMetric"] {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #94a3b8 !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-testid="stMetricValue"] {
+    color: #f1f5f9 !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* ── Primary button ───────────────────────────────────────────────────────── */
+.stButton>button[kind="primary"] {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.stButton>button[kind="primary"]:hover {
+    opacity: 0.88;
+}
+
+/* ── Dataframe ────────────────────────────────────────────────────────────── */
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ── utils ──────────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
