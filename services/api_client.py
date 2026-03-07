@@ -10,7 +10,7 @@ class APIClient:
     All methods raise on non-2xx and surface errors via st.error().
     """
 
-    def __init__(self, base_url: str = settings.API_BASE_URL) -> None:
+    def __init__(self, base_url: str = settings.API_URL) -> None:
         self.base_url = base_url.rstrip("/")
 
     # ------------------------------------------------------------------

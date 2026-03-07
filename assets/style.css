@@ -7,6 +7,14 @@ body,
     font-family: 'Inter', sans-serif;
 }
 
+[data-testid="stMainBlockContainer"] {
+    padding: 4.3rem 5rem;
+}
+
+[data-testid="stVerticalBlock"] {
+    position: relative;
+}
+
 /* ── Sidebar ──────────────────────────────────────────────────────────────── */
 [data-testid="stSidebar"] {
     color: #EEEEEE;
@@ -63,7 +71,7 @@ body,
 [data-testid="stMetric"] {
     background: #1e293b;
     border-radius: 12px;
-    padding: 1rem 1.25rem;
+    padding: 0.2rem 0.5rem;
 }
 
 [data-testid="stMetricLabel"] {
@@ -101,6 +109,11 @@ body,
 }
 
 /* ── utils ──────────────────────────────────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }

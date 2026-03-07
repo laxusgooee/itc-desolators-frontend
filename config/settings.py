@@ -9,14 +9,12 @@ class Settings(BaseSettings):
     )
 
     # API connection
-    API_BASE_URL: str = "http://localhost:8000/api/v1"
+    API_URL: str = "http://localhost:8000/api/v1"
 
     # App metadata
     APP_NAME: str = "My Streamlit App"
     APP_ICON: str = "🚀"
 
-    # Pagination
-    DEFAULT_PAGE_SIZE: int = 10
 
 
 # Singleton — import this everywhere

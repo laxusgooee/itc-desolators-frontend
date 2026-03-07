@@ -14,9 +14,8 @@ def render_sidebar() -> None:
             with st.container(gap="small"):
                 st.page_link("app.py", label="Home", icon="🏠")
                 st.page_link("pages/1_classification.py", label="Classification", icon="📋")
-                st.page_link("pages/2_📊_Dashboard.py", label="Dashboard", icon="📊")
 
             
         with st.container():
             st.markdown("---")
-            st.caption(f"`{settings.API_BASE_URL}`", width="stretch", text_alignment="center")
+            st.caption(f"`{settings.API_URL}`", width="stretch", text_alignment="center")
