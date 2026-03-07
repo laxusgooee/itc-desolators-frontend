@@ -4,7 +4,6 @@ __pycache__
 .env
 .ipynb_checkpoints
 .streamlit/secrets.toml
-uv.lock
 README.md
 Dockerfile
 .dockerignore
