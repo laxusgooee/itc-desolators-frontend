@@ -1,11 +1,9 @@
 import streamlit as st
 from services.classification_api_client import classification_api
 from components.sidebar import render_sidebar
-from components.skeleton import render_skeleton
 from components.classification_dialog import open_classification_dialog
 from components.classification_result_row import render_classification_result_row
 from components.classification_accuracy_badge import render_accuracy_badge
-from components.classification_confusion_matrix_heatmap import render_classification_confusion_matrix_heatmap
 
 
 classification_metrics = classification_api.get_metrics()
@@ -108,7 +106,7 @@ with st.container():
 
         if classification_result is not None:
             with st.container(key="classification-result", border=True):
-                st.html(f'<h3 style="font-weight:bold;">PREDICTION RESULT </h3>')
+                st.html('<h3 style="font-weight:bold;">PREDICTION RESULT </h3>')
 
                 with st.container(gap="medium"):
                     for index, result in enumerate(classification_result["predictions"][:3]):
@@ -121,7 +119,7 @@ with st.container():
         
 
         with st.container(key="model-metrics", border=True):
-            st.html(f'<h3 style="font-weight:bold;">Model Metrics</h3>')
+            st.html('<h3 style="font-weight:bold;">Model Metrics</h3>')
 
             with st.container():
 

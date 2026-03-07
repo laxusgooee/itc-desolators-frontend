@@ -14,18 +14,12 @@ def render_accuracy_badge(score: float) -> None:
     if score >= 0.8:
         # Success Green
         border_color = "#4caf50"
-        bg_color = "#e8f5e9"
-        text_color = "#2e7d32"
     elif score >= 0.5:
         # Warning Orange
         border_color = "#ff9800"
-        bg_color = "#fff3e0"
-        text_color = "#ef6c00"
     else:
         # Error Red
         border_color = "#f44336"
-        bg_color = "#ffebee"
-        text_color = "#c62828"
     
     badge_html = f"""
    <div style="height:120px; overflow:hidden;">
