@@ -9,7 +9,3 @@ def truncate(text: str, max_length: int = 60) -> str:
         return text
     return text[:max_length].rstrip() + "…"
 
-
-def bool_to_badge(value: bool) -> str:
-    """Return a coloured emoji badge for a boolean value."""
-    return "🟢 Active" if value else "🔴 Inactive"
