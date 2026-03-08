@@ -14,6 +14,7 @@ def render_sidebar() -> None:
             with st.container(gap="small"):
                 st.page_link("app.py", label="Home", icon="🏠")
                 st.page_link("pages/1_classification.py", label="Classification", icon="📋")
+                st.page_link("pages/2_nlp.py", label="NLP", icon="📝")
 
             
         with st.container():

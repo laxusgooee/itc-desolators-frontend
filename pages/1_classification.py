@@ -7,9 +7,13 @@ from components.classification_accuracy_badge import render_accuracy_badge
 from components.classification_class_weights_barchart import render_classification_class_weights_barchart
 from components.classification_confusion_matrix_dialog import open_confusion_matrix_dialog
 
-
-
 classification_metrics = classification_api.get_metrics()
+
+st.set_page_config(
+    page_title="Classification",
+    page_icon="📋",
+    layout="wide"
+)
 
 # --- Load custom CSS ---
 with open("assets/style.css") as f:
@@ -61,7 +65,6 @@ st.html(
     """
 )
 
-st.set_page_config(page_title="Classification", page_icon="📋", layout="wide")
 render_sidebar()
 
 with st.container(gap=None):

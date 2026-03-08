@@ -46,4 +46,4 @@ with col2:
         st.subheader("🧠 NLP Intelligence")
         st.write("NLP workflow for ticket classification, entity extraction (Order IDs, Emails), and response drafting.")
         if st.button("Open NLP Workflow", type="secondary", use_container_width=True):
-            st.info("NLP Module implementation in progress.")
+            st.switch_page("pages/2_nlp.py")
