@@ -32,6 +32,8 @@ body,
     background-color: transparent;
     padding-top: 4rem;
     padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 [data-testid="stSidebarNav"] {

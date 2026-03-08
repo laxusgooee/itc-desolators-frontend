@@ -1,5 +1,5 @@
 import streamlit as st
-
+from utils.formatters import truncate
 from config.settings import settings
 
 
@@ -18,4 +18,4 @@ def render_sidebar() -> None:
             
         with st.container():
             st.markdown("---")
-            st.caption(f"`{settings.API_URL}`", width="stretch", text_alignment="center")
+            st.caption(f"`{truncate(settings.API_URL, 40)}`", width="stretch", text_alignment="center")
