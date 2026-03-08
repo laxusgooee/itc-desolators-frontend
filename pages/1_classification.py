@@ -76,15 +76,17 @@ with st.container():
 
     with col_1:
         with st.container(key="image-source", border=True):
+            uploaded = st.session_state.get("uploaded_image")
             with st.container(horizontal=True, horizontal_alignment="distribute", vertical_alignment="center"):
                 st.text("IMAGE SOURCE")
 
-                if st.button(":material/delete:", type="secondary"):
-                    st.session_state.pop("uploaded_image", None)
+                if uploaded is not None:
+                    if st.button(":material/delete:", type="secondary"):
+                        st.session_state.pop("uploaded_image", None)
+                        st.session_state.pop("classification_result", None)
+                        st.rerun()
 
             with st.container(key="image-container", gap=None):
-                uploaded = st.session_state.get("uploaded_image")
-
                 if uploaded is not None:
                     st.image(uploaded, width='stretch')
                 else:
