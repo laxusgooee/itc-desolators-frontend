@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from components.sidebar import render_sidebar
 from services.nlp_api_client import nlp_api
 from components.nlp_add_new_ticket import nlp_add_new_ticket
