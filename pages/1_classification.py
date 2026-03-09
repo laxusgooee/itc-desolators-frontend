@@ -145,9 +145,6 @@ with st.container():
 
                 metrics = classification_metrics['classification_report']['weighted avg']
 
-                # with cols[0]:
-                #     st.metric("Accuracy", "30°F", "-9°F", border=True)
-
                 with cols[0]:
                     st.metric("Precision", f"{round(metrics["precision"] * 100)}%", border=True)
 
